@@ -1,0 +1,207 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Gantari&family=Lora:ital@1&display=swap');
+
+
+/* common style */
+
+
+
+body {
+    font-family: 'Gantari', sans-serif;
+    /* font-family: 'Lora', serif; */
+    background-color: #F3F1FF;
+
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* top players style */
+
+
+
+.container {
+    background-color: #FFFFFF;
+
+    width: 870px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 21px;
+    /* justify-content: center; */
+    /* margin-top: 3px; */
+
+
+
+}
+
+hr {
+    border: 1px solid #d1d1d1;
+    margin-bottom: 30px;
+}
+
+.top-players {
+    margin-bottom: 30px;
+
+}
+
+
+.section-title {
+    color: darkgoldenrod;
+
+    font-size: 24px;
+    margin-top: 3px;
+
+
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.player-name {
+    margin-left: 16px;
+    font-size: 18px;
+
+}
+
+/* top bloh dtyle */
+/* .blog .thumbnail img {
+
+    width: 177px;
+    height: 177px;
+
+
+} */
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+
+.blog {
+    display: flex;
+
+}
+
+.blog img {
+    width: 177px;
+    height: 177px;
+
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-title {
+    font-size: 20px;
+
+}
+
+.blog-author {
+    color: #9f9f9f;
+    font-size: 16px;
+
+}
+
+.blog-author a {
+    text-decoration: none;
+    font-size: 16px;
+    font-size: 16px;
+    color: #562EFF;
+
+}
+
+
+/*
+....... courses-style */
+.courses {
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+
+.course .course-banner img {
+    width: 224px;
+    height: 104px;
+}
+
+.course-info {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE
+}
+
+/* ..........
+Maddya queries
+............ */
+/* Movile */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100px;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+        /* background-color: #FFC014; */
+    }
+
+    .player,
+    .blogs {
+        flex-direction: column;
+    }
+
+    /* 
+    .blogs, */
+    /* .courses {
+        display: none;
+    } */
+    /* 
+tabler devices */
+
+
+    @media only screen and (min-width:688px)and(max-width:992px) {
+
+        .players {
+            background-color: aqua;
+        }
+
+
+    }
